@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+.menu {
+    background: linear-gradient(rgb(17, 17, 17), rgb(57, 91, 100, 0.5));
+}
+
+.minilogo_barra {
+    float: right;
+    display: flex;
+    margin-top: -40px;
+    margin-right: 10px;
+    opacity: 0.8;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(rgb(17, 17, 17), rgb(57, 91, 100, .7));
+    z-index: 1;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color: #111;
+    transition: 0.7s;
+
+}
+
+.Active {
+    background-color: #04AA6D;
+}
+
+.btn_menu {
+    margin-right: 30px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width: 930px) {
+
+    .menu {
+        height: 65px;
+    }
+
+    .btn_menu {
+        display: inline-flex;
+        padding: 17px 0 0 10px;
+    }
+
+    .menu_items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        top: 100vh;
+        text-align: center;
+        transition: all .8s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu_items li:hover {
+        background: none;
+    }
+
+    .menu_items li a {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .menu_intems li a:hover {
+        color: #111;
+    }
+
+}
+
+
+/*----------Fin AREA BARRA DE NAVEGACION----------*/
+
+#imagen_fondo {
+    background-image: url(../Imagenes/pexels-vitaly-vlasov-1342460.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+}
+
+.Logo {
+    display: flex;
+    justify-content: right;
+
+}
+
+#Frase_index h3 {
+    font-family: 'The Nautigal', cursive;
+    font-size: 400%;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+    margin-top: -5%;
+
+}
+
+.animate__animated.animate__fadeInLeft {
+    animation-duration: 4s;
+}
+
+.Boton_Index {
+    color: #1cc49d;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10%;
+    margin-right: 32%;
+}
+
+#proceso_pagina{
+    display: flex;
+    justify-content: center;
+}
+
+#carouselExampleControls {
+    margin: 180px;
+
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 200px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+/*-------AREA RESPONSIVE INDEX-----*/
+
+
+@media screen and (max-width: 930px) {
+
+    #Frase_index h3 {
+        font-family: 'The Nautigal', cursive;
+        font-size: 200%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+
+    }
+
+    .Logo {
+
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+
+    }
+
+    .Boton_Index {
+        color: #1cc49d;
+        display: flex;
+        justify-content: center;
+        margin-top: 13%;
+        margin-right: 0%;
+    }
+
+    #carouselExampleControls {
+        margin: 20px;
+
+    }
+
+}
+
+/*-------COMIENZO DE PESTAÑA "QUIEN SOY"-----*/
+
+#body_quiensoy {
+    background-image: url(../Imagenes/fondocafe.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#Main__QuienSoy {
+    color: #fff;
+}
+
+.Article__QuienSoy {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 40% 40%;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+    justify-content: space-around;
+    padding: 6%;
+}
+
+.Parrafos_quiensoyx4 {
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+
+}
+
+#parrafo_ultimo {
+    margin-bottom: 20%;
+}
+
+.animate__animated.animate__zoomIn {
+    animation-duration: 3s;
+}
+
+@media screen and (max-width: 930px) {
+
+    #Main__QuienSoy {
+        height: 200%;
+    }
+
+    .Article__QuienSoy {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-row-gap: 2%;
+    }
+
+    .enlace {
+        padding-left: 20px;
+    }
+
+}
+
+
+/*-------COMIENZO DE PESTAÑA "Servicios"-----*/
+
+#Servicios {
+    background-image: url(../Imagenes/pexels-lukas-574087.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.Titulo__Trabajar {
+    color: whitesmoke;
+    font-family: 'Bebas Neue', cursive;
+    margin: 3%;
+    font-size: 400%;
+    display: flex;
+    justify-content: left;
+
+}
+
+.Parrafo__Trabajar {
+    font-family: 'Heebo', sans-serif;
+    color: whitesmoke;
+    font-size: 120%;
+    margin: 2%;
+    width: 45%;
+
+}
+
+.Video {
+    height: 0px;
+    padding-bottom: 56.6%;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.Video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.youtube_video {
+    width: 50%;
+}
+
+
+@media screen and (max-width: 930px) {
+
+    .Titulo__Trabajar {
+        color: whitesmoke;
+        font-family: 'Bebas Neue', cursive;
+        margin: 3%;
+        font-size: 400%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Parrafo__Trabajar {
+        font-family: 'Heebo', sans-serif;
+        color: whitesmoke;
+        font-size: 120%;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+
+    }
+
+    .youtube_video {
+        width: 100%;
+    }
+
+}
+
+
+/*------Comienzo de Pestaña Skills ------*/
+
+
+
+#Main__Skills {
+    background-color: rgb(17, 17, 17);
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+}
+
+.Titulo_Skills {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    padding-bottom: 3%;
+}
+
+#Skills-Gril {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 25%;
+    grid-row-gap: 25%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Heebo', sans-serif;
+
+}
+
+#Skills-Gril div img {
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width: 930px) {
+
+    #Main__Skills {
+        height: 1700px;
+    }
+
+    #Skills-Gril {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-row-gap: 10%;
+        justify-content: center;
+
+    }
+
+    #Skills-Gril,
+    p {
+        font-size: 120%;
+    }
+
+
+}
+
+
+/*-----Comienzo Pestaña Contacto-----*/
+
+.Body-Contacto {
+    background-color: rgb(17, 17, 17);
+    color: whitesmoke;
+}
+
+.Titulo_Contacto h1 {
+    font-family: 'Heebo', sans-serif;
+    font-size: 50px;
+}
+
+.Form_register {
+    width: 100%;
+    background: #24303c;
+    padding: 30px;
+    border-radius: 4px;
+    font-family: 'Heebo', sans-serif;
+
+}
+
+.Form_register legend {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.Controls {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.Form_register textarea {
+    background-color: #ffffff;
+    border: 1px solid whitesmoke;
+    width: 50%;
+}
+
+.botoms {
+    width: 25%;
+    background: #04AA6D;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    font-family: 'Heebo', sans-serif;
+}
+
+@media screen and (max-width: 930px) {
+
+    .Form_register {
+        width: 100%;
+        background: #24303c;
+        padding: 0;
+        border-radius: 4px;
+        font-family: 'Heebo', sans-serif;
+    }
+
+    .Form_register textarea {
+        width: 65%;
+    }
+
+}
