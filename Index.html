@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <script src="./JS/apps.js" defer></script>
+    
 </head>
 
 <body ID=Index>
 
-    <section id="imagen_fondo">
+    <div id="particles-js"></div>
 
         <header id="header_index">
 
@@ -41,7 +41,7 @@
 
         </header>
 
-        <!--El nombre se colocará al lado de un Logo-->
+        <!--Frase principal, Logo y Boton de Contacto-->
 
         <main id="Main_Index">
             <section class=Logo>
@@ -51,7 +51,7 @@
 
 
             <div id=Frase_index>
-                <h3 class="animate__animated animate__fadeInLeft">Distinguidos sitios webs. <br> Estéticos y funcionales
+                <h3 class="animate__fadeIn">Distinguidos sitios webs. <br> Estéticos y funcionales
                 </h3>
             </div>
 
@@ -62,7 +62,38 @@
 
         </main>
 
-    </section>
+
+    <!--Carrousel de imagenes-->
+
+    <div id="contenedor_carousel">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Imagenes/imagenes carrusel/2022-01-18 (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/imagenes carrusel/2022-01-20 (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Imagenes/imagenes carrusel/2022-01-20 (2).jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <!--Pie de Página-->
 
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -93,6 +124,12 @@
         </div>
 
     </footer>
+
+    <!--Particulas-->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./JS/apps.js" defer></script>
+    <!--particulas-->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
