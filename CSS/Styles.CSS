@@ -12,23 +12,16 @@
 
 
 .menu {
-    background: linear-gradient(rgb(17, 17, 17), rgb(57, 91, 100, 0.5));
+    background: none;
 }
 
-.minilogo_barra {
-    float: right;
-    display: flex;
-    margin-top: -40px;
-    margin-right: 10px;
-    opacity: 0.8;
-}
 
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(rgb(17, 17, 17), rgb(57, 91, 100, .7));
+    background: none;
     z-index: 1;
 
 }
@@ -72,6 +65,7 @@ ul.show {
 
     .menu {
         height: 65px;
+        background-color:#0a1a2a;
     }
 
     .btn_menu {
@@ -88,6 +82,7 @@ ul.show {
         transition: all .8s;
         display: flex;
         flex-direction: column;
+        background-color:#0a1a2a;
     }
 
     .menu_items li {
@@ -142,10 +137,6 @@ body{
 
 .animate__fadeIn{
     animation-duration: 10s;
-}
-
-.animate__animated.animate__fadeInLeft {
-    animation-duration: 4s;
 }
 
 #contenedor_carousel{
@@ -263,7 +254,7 @@ body{
 
     #Frase_index h3 {
         font-family: 'The Nautigal', cursive;
-        font-size: 200%;
+        font-size: 50px;
         color: white;
         display: flex;
         justify-content: center;
@@ -293,15 +284,6 @@ body{
 
 /*-------COMIENZO DE PESTAÑA "QUIEN SOY"-----*/
 
-#body_quiensoy {
-    background-image: url(../Imagenes/fondocafe.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
 
 #Main__QuienSoy {
     color: #fff;
@@ -341,6 +323,10 @@ body{
 
     .enlace {
         padding-left: 20px;
+    }
+
+    #parrafo_ultimo {
+        margin-bottom: 150px;
     }
 }
 
@@ -431,11 +417,11 @@ body{
 
 
 #Main__Skills {
-    background-color: rgb(17, 17, 17);
+    
     color: whitesmoke;
     text-align: center;
     width: 100%;
-    height: 700px;
+    height: 1500px;
 }
 
 .Titulo_Skills {
@@ -444,42 +430,40 @@ body{
     padding-bottom: 3%;
 }
 
-#Skills-Gril {
-    display: grid;
-    grid-template-columns: 25% 25%;
-    grid-template-rows: 50% 50%;
-    grid-column-gap: 25%;
-    grid-row-gap: 25%;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Heebo', sans-serif;
-
+#cards_skills div{
+    margin: 30px;
 }
 
-#Skills-Gril div img {
-    padding-bottom: 5%;
+.card{
+    background-image: radial-gradient(circle at 50% -20.71%, #ff9bff 0, #d785ff 25%, #9c6cd8 50%, #6652ab 75%, #393c83 100%);
 }
+
+
+
 
 @media screen and (max-width: 930px) {
 
     #Main__Skills {
-        height: 1700px;
+        height: 2900px;
+        width: 100%;
     }
 
-    #Skills-Gril {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-row-gap: 10%;
-        justify-content: center;
-
+    #cards_skills{
+        width: auto;
     }
 
-    #Skills-Gril,
-    p {
-        font-size: 120%;
+}
+
+@media screen and (max-width: 280px) {
+
+    #Main__Skills {
+        height: 3200px;
+    
     }
 
+    #cards_skills{
+        width: auto;
+    }
 
 }
 
@@ -491,64 +475,13 @@ body{
     color: whitesmoke;
 }
 
-.Titulo_Contacto h1 {
-    font-family: 'Heebo', sans-serif;
-    font-size: 50px;
+#formulario{
+    width: auto;
+    padding-right: auto;
+    margin-bottom: 30px;
+    margin-left: 0%;
+    margin-right: auto;
+    background-image: radial-gradient(circle at 59.61% 23.59%, #bebd35 0, #acba37 8.33%, #97b63b 16.67%, #82b03f 25%, #6ca842 33.33%, #569d45 41.67%, #3e9146 50%, #248547 58.33%, #007a47 66.67%, #007048 75%, #00684a 83.33%, #00614c 91.67%, #005c4e 100%);
 }
 
-.Form_register {
-    width: 100%;
-    background: #24303c;
-    padding: 30px;
-    border-radius: 4px;
-    font-family: 'Heebo', sans-serif;
 
-}
-
-.Form_register legend {
-    font-size: 25px;
-    margin-bottom: 20px;
-}
-
-.Controls {
-    width: 50%;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid rgb(0, 0, 0);
-    font-size: 18px;
-}
-
-.Form_register textarea {
-    background-color: #ffffff;
-    border: 1px solid whitesmoke;
-    width: 50%;
-}
-
-.botoms {
-    width: 25%;
-    background: #04AA6D;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-    font-family: 'Heebo', sans-serif;
-}
-
-@media screen and (max-width: 930px) {
-
-    .Form_register {
-        width: 100%;
-        background: #24303c;
-        padding: 0;
-        border-radius: 4px;
-        font-family: 'Heebo', sans-serif;
-    }
-
-    .Form_register textarea {
-        width: 65%;
-    }
-
-}

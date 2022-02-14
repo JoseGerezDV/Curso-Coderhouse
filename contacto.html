@@ -23,14 +23,11 @@
         <nav class="menu">
             <ul class="menu_items">
                 <li><a href="../Proyecto Final- Jose Gerez-Portfolio/Index.html">Inicio</a></li>
-                <li><a href="../Proyecto Final- Jose Gerez-Portfolio/quiensoy.html" >Acerca de mí</a></li>
+                <li><a href="../Proyecto Final- Jose Gerez-Portfolio/quiensoy.html">Acerca de mí</a></li>
                 <li><a href="../Proyecto Final- Jose Gerez-Portfolio/servicios.html">Servicios</a></li>
                 <li><a href="../Proyecto Final- Jose Gerez-Portfolio/Skills.html">Skills</a></li>
                 <li><a href="../Proyecto Final- Jose Gerez-Portfolio/contacto.html" class=Active>Contacto</a></li>
             </ul>
-            <span class="minilogo_barra">
-                <img src="./Imagenes/minilogo.png" alt="">
-            </span>
             <span class="btn_menu">
                 <i class="fas fa-bars"></i>
             </span>
@@ -38,32 +35,54 @@
 
     </header>
 
-    <section class="Titulo_Contacto">
-        <h1>Contactame</h1>
+    <main>
 
-        <a href="https://www.facebook.com/" target="_blank"> Mi Facebook</a>
-        <a href="https://www.instagram.com/" target="_blank"> Mi Instagram</a><br><br><br>
-    </section>
+        <section>
+            <h1>Contacto</h1>
+        </section>
 
-    <section class=Form_register>
+        <section id="formulario" class="container">
+            <div class="row col-7">
+                <div>
+                    <div class="mb-3">
+                        <label for="nombre-txt" class="form-label">Nombre</label>
+                        <input type="text" placeholder="Ingrese Nombre" class="form-control" id="nombre-txt">
+                    </div>
+                    <div class="mb-5">
+                        <label for="apellido-txt" class="form-label">Apellido</label>
+                        <input type="text" placeholder="Ingrese Apellido" class="form-control" id="apellido-txt">
+                    </div>
+                    <div class="input-group mb-5">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="mb-5">
+                        <label for="numero" class="form-label"></label>
+                        <input type="number" placeholder="Número de celular" class="numero" id="numero">
+                    </div>
+                    <select class="form-select form-select-lg mb-5" aria-label=".form-select-lg example">
+                        <option selected>Seleccione una Opción</option>
+                        <option value="1">Particular</option>
+                        <option value="2">Empresa</option>
+                    </select>
+                    <div class="input-group mb-5">
+                        <span class="input-group-text">Detalles del proyecto</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
 
-        <legend>Formulario de contacto</legend>
+                </div>
 
-        <input type="radio" name="Empresa">Empresa
-        <input type="radio" name="Particular">Particular
-        <br><br>
-        <input class="Controls" type="text" placeholder="Nombre y apellido" required>
-        <input class="Controls" type="email" placeholder="E-mail" required>
-        <input class="Controls" type="number" placeholder="Teléfono" required><br>
-        <textarea name="Detalles del proyecto" cols="40" rows="10" placeholder="Detalles del proyecto"
-            required></textarea>
+                <div id="botones">
+                    <a href="#" class="fa fa-facebook"></a>
+                </div>
 
-        <div>
-            <input class= "botoms" type="submit">
-            <input class= "botoms" type="reset">
-        </div>
+            </div>
 
-    </section>
+        </section>
+
+
+    </main>
 
 
     <footer class="pie-pagina">
@@ -95,6 +114,8 @@
         </div>
 
     </footer>
+
+
 
 </body>
 
