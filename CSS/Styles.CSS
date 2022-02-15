@@ -22,7 +22,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background: none;
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -175,6 +175,7 @@ body{
 .pie-pagina {
     width: 100%;
     background-color: #0a141d;
+    z-index: 2;
 }
 
 .pie-pagina .grupo-1 {
@@ -332,13 +333,14 @@ body{
 
 /*-------COMIENZO DE PESTAÑA "Servicios"-----*/
 
-#Servicios {
-    background-image: url(../Imagenes/pexels-lukas-574087.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center center;
+.video-servicio{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
 
 }
 
@@ -475,6 +477,7 @@ body{
     color: whitesmoke;
 }
 
+
 #formulario{
     width: auto;
     padding-right: auto;
@@ -482,6 +485,8 @@ body{
     margin-left: 0%;
     margin-right: auto;
     background-image: radial-gradient(circle at 59.61% 23.59%, #bebd35 0, #acba37 8.33%, #97b63b 16.67%, #82b03f 25%, #6ca842 33.33%, #569d45 41.67%, #3e9146 50%, #248547 58.33%, #007a47 66.67%, #007048 75%, #00684a 83.33%, #00614c 91.67%, #005c4e 100%);
+    border-radius: 10px;
+
 }
 
 
