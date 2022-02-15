@@ -46,7 +46,7 @@
         </section>
 
         <section id="formulario" class="container">
-            <div class="row col-7">
+            <div class="row">
                 <div>
                     <div class="mb-3">
                         <label for="nombre-txt" class="form-label">Nombre</label>
@@ -56,29 +56,30 @@
                         <label for="apellido-txt" class="form-label">Apellido</label>
                         <input type="text" placeholder="Ingrese Apellido" class="form-control" id="apellido-txt">
                     </div>
-                    <div class="input-group mb-5">
+                    <div id="emailcontacto" class="input-group mb-4">
                         <span class="input-group-text" id="basic-addon1">@</span>
                         <input type="text" class="form-control" placeholder="E-mail" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
                     <div class="mb-5">
-                        <label for="numero" class="form-label"></label>
-                        <input type="number" placeholder="Número de celular" class="numero" id="numero">
+                        <label for="apellido-txt" class="form-label">Celular</label>
+                        <input type="number" placeholder="Número de Celular" class="form-control" id="apellido-txt">
                     </div>
                     <select class="form-select form-select-lg mb-5" aria-label=".form-select-lg example">
                         <option selected>Seleccione una Opción</option>
                         <option value="1">Particular</option>
                         <option value="2">Empresa</option>
                     </select>
-                    <div class="input-group mb-5">
-                        <span class="input-group-text">Detalles del proyecto</span>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
-                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlTextarea1" class="form-label">Detalles del proyecto</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
 
-                </div>
+                    <div class="d-grid gap-2 col-6 mx-auto mb-5">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                        <button class="btn btn-primary" type="button">Resetear</button>
+                      </div>
 
-                <div id="botones">
-                    <a href="#" class="fa fa-facebook"></a>
                 </div>
 
             </div>

@@ -480,13 +480,35 @@ body{
 
 
 #formulario{
-    width: auto;
+    width: 50%;
     padding-right: auto;
     margin-bottom: 30px;
-    margin-left: 0%;
+    margin-left: 15px;
     margin-right: auto;
     background-image: radial-gradient(circle at 59.61% 23.59%, #bebd35 0, #acba37 8.33%, #97b63b 16.67%, #82b03f 25%, #6ca842 33.33%, #569d45 41.67%, #3e9146 50%, #248547 58.33%, #007a47 66.67%, #007048 75%, #00684a 83.33%, #00614c 91.67%, #005c4e 100%);
     border-radius: 10px;
+
+}
+
+#formulario div{
+    width: 95%;
+}
+
+#formulario select{
+    width: 90%;
+}
+
+#formulario button{
+    background-color: #ca5907;
+    border-color: #fff;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 930px) {
+
+ #formulario{
+     width: 80%;
+ }
 
 }
 
