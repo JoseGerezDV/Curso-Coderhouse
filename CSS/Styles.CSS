@@ -113,6 +113,26 @@ body{
     background-color: black;
 }
 
+.contenedor-titulo{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor-titulo .titulo{
+    font-size: 50px;
+}
+
+.contenedor-titulo .caracteristica-sitio{
+    
+    font-weight: bold;
+    color: #c99806;
+    font-style: normal;
+
+
+}
+
 #particles-js{
     height: 100vh;
     width: 100%;
@@ -126,18 +146,6 @@ body{
 
 }
 
-#Frase_index h3 {
-    font-family: 'The Nautigal', cursive;
-    font-size: 500%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: -5%;
-}
-
-.animate__fadeIn{
-    animation-duration: 10s;
-}
 
 #contenedor_carousel{
 
@@ -254,16 +262,6 @@ body{
 
 @media screen and (max-width: 930px) {
 
-    #Frase_index h3 {
-        font-family: 'The Nautigal', cursive;
-        font-size: 50px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        margin: 0%;
-
-    }
-
 
     .Logo {
 
@@ -281,7 +279,10 @@ body{
         margin-right: 0%;
     }
 
-
+    .contenedor-titulo{
+    flex-direction: column;
+          text-align: center;
+    }
 }
 
 /*-------COMIENZO DE PESTAÑA "QUIEN SOY"-----*/
