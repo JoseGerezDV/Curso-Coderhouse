@@ -148,24 +148,8 @@ body{
 
 
 #contenedor_carousel{
-
-    display: flex;
-    justify-content: center;
-    padding: 20px;
     margin-top: 150px;
     margin-bottom: 100px;
-}
-
-#carouselExampleControls{
-    width: 70%;
-}
-
-.carousel-inner img {
-    width: 100%;
-}
-
-.carousel-inner{
- height: 100%;
 }
 
 
@@ -255,7 +239,7 @@ body{
         grid-gap: 30px;
         padding: 35px 0px;
     }
-}
+
 
 /*-------AREA RESPONSIVE INDEX-----*/
 
@@ -283,6 +267,15 @@ body{
     flex-direction: column;
           text-align: center;
     }
+
+    #contenedor_carousel{
+        width: auto;
+    }
+
+    #carouselExampleControls{
+        width: auto;
+    }
+}
 }
 
 /*-------COMIENZO DE PESTAÑA "QUIEN SOY"-----*/
@@ -292,46 +285,10 @@ body{
     color: #fff;
 }
 
-
-.Article__QuienSoy {
-    display: grid;
-    grid-template-columns: 35% 35%;
-    grid-template-rows: 40% 40%;
-    grid-column-gap: 5%;
-    grid-row-gap: 5%;
-    justify-content: space-around;
-    padding: 6%;
-}
-.Parrafos_quiensoyx4 {
-    font-family: 'Heebo', sans-serif;
-    text-align: center;
-
+#parte_baja_textos{
+    margin-bottom: 150px;
 }
 
-#parrafo_ultimo {
-    margin-bottom: 20%;
-}
-
-@media screen and (max-width: 930px) {
-
-    #Main__QuienSoy {
-        height: 200%;
-    }
-
-    .Article__QuienSoy {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-row-gap: 2%;
-    }
-
-    .enlace {
-        padding-left: 20px;
-    }
-
-    #parrafo_ultimo {
-        margin-bottom: 150px;
-    }
-}
 
 /*-------COMIENZO DE PESTAÑA "Servicios"-----*/
 
@@ -350,7 +307,7 @@ body{
     color: whitesmoke;
     font-family: 'Bebas Neue', cursive;
     margin: 3%;
-    font-size: 400%;
+    font-size: 4rem;
     display: flex;
     justify-content: left;
 
@@ -359,7 +316,7 @@ body{
 .Parrafo__Trabajar {
     font-family: 'Heebo', sans-serif;
     color: whitesmoke;
-    font-size: 120%;
+    font-size: 1.3rem;
     margin: 2%;
     width: 45%;
 
@@ -382,6 +339,26 @@ body{
 
 .youtube_video {
     width: 50%;
+}
+
+.preguntas_trabajar{
+    color: #fff;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#acordeon{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.accordion-body{
+    background-image: radial-gradient(circle at 45.29% -3.89%, #905360 0, #87465a 16.67%, #7a3651 33.33%, #6a2246 50%, #590a3c 66.67%, #4b0036 83.33%, #3e0032 100%);
+    color: #fff;
 }
 
 
@@ -479,27 +456,25 @@ body{
     color: whitesmoke;
 }
 
-
 #formulario{
-    width: 50%;
-    padding-right: auto;
+    width: auto;
     margin-bottom: 30px;
-    margin-left: 15px;
-    margin-right: auto;
-    background-image: radial-gradient(circle at 59.61% 23.59%, #bebd35 0, #acba37 8.33%, #97b63b 16.67%, #82b03f 25%, #6ca842 33.33%, #569d45 41.67%, #3e9146 50%, #248547 58.33%, #007a47 66.67%, #007048 75%, #00684a 83.33%, #00614c 91.67%, #005c4e 100%);
-    border-radius: 10px;
-
 }
 
-#formulario div{
+#formulario__color{
+    background-image: radial-gradient(circle at 59.61% 23.59%, #bebd35 0, #acba37 8.33%, #97b63b 16.67%, #82b03f 25%, #6ca842 33.33%, #569d45 41.67%, #3e9146 50%, #248547 58.33%, #007a47 66.67%, #007048 75%, #00684a 83.33%, #00614c 91.67%, #005c4e 100%);
+    border-radius: 10px;
+}
+
+#formulario__color div{
     width: 95%;
 }
 
-#formulario select{
+#formulario__color select{
     width: 90%;
 }
 
-#formulario button{
+#formulario__color button{
     background-color: #ca5907;
     border-color: #fff;
     font-size: 1.2rem;
@@ -507,10 +482,16 @@ body{
 
 @media screen and (max-width: 930px) {
 
- #formulario{
-     width: 80%;
- }
+    #formulario__color{
+        width: 85%;
+    }
 
-}
+    #formulario__color div{
+        width: 85%;
+    }
 
-
+    #formulario__color select{
+        width: 70%;
+    }
+   
+   }
