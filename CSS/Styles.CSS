@@ -387,6 +387,12 @@ body {
         width: 100%;
     }
 
+    .preguntas_trabajar{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
 
 
