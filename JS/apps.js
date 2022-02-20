@@ -124,10 +124,10 @@ particlesJS(
 
 const typed = new Typed('.typed', {
   strings: [
-  '<i class="caracteristica-sitio">esteticos</i>',
-  '<i class="caracteristica-sitio">funcionales</i>',
-  '<i class="caracteristica-sitio">dinamicos</i>',
-  '<i class="caracteristica-sitio">seguros</i>',
+  '<i class="caracteristica-sitio">estéticos.</i>',
+  '<i class="caracteristica-sitio">funcionales.</i>',
+  '<i class="caracteristica-sitio">dinámicos.</i>',
+  '<i class="caracteristica-sitio">seguros.</i>',
 ],
 
   stringsElement: '#cadenas-texto', // ID del elemento que contiene cadenas de texto a mostrar.

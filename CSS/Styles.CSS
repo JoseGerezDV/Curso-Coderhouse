@@ -11,6 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 
+/*configuración GENERAL barra de navegación, se repite en toda la web*/
+
 .menu {
     background: none;
 }
@@ -65,7 +67,7 @@ ul.show {
 
     .menu {
         height: 65px;
-        background-color:#0a1a2a;
+        background-color: #0a1a2a;
     }
 
     .btn_menu {
@@ -82,7 +84,7 @@ ul.show {
         transition: all .8s;
         display: flex;
         flex-direction: column;
-        background-color:#0a1a2a;
+        background-color: #0a1a2a;
     }
 
     .menu_items li {
@@ -107,63 +109,17 @@ ul.show {
 }
 
 
-/*----------Fin AREA BARRA DE NAVEGACION----------*/
-
-body{
-    background-color: black;
-}
-
-.contenedor-titulo{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-
-}
-
-.contenedor-titulo .titulo{
-    font-size: 50px;
-}
-
-.contenedor-titulo .caracteristica-sitio{
-    
-    font-weight: bold;
-    color: #c99806;
-    font-style: normal;
+/*Configuración GENERAL de las particulas JS*/
 
 
-}
-
-#particles-js{
+#particles-js {
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: -1;
 }
 
-.Logo {
-    display: flex;
-    justify-content: right;
-
-}
-
-
-#contenedor_carousel{
-    margin-top: 150px;
-    margin-bottom: 100px;
-}
-
-
-.Boton_Index {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 5%;
-    margin-right: 32%;
-}
-
-#proceso_pagina{
-    display: flex;
-    justify-content: center;
-}
+/*Configuración GENERAL del FOOTER*/
 
 .pie-pagina {
     width: 100%;
@@ -239,13 +195,54 @@ body{
         grid-gap: 30px;
         padding: 35px 0px;
     }
+}
+
+/*----------COMINEZO INDEX----------*/
+
+body {
+    background-color: black;
+}
+
+.contenedor-titulo {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor-titulo .titulo {
+    font-size: 50px;
+}
+
+.contenedor-titulo .caracteristica-sitio {
+
+    font-weight: bold;
+    color: #c99806;
+    font-style: normal;
+
+}
+
+.Logo {
+    display: flex;
+    justify-content: right;
+
+}
 
 
-/*-------AREA RESPONSIVE INDEX-----*/
+#contenedor_carousel {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
 
+
+.Boton_Index {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5%;
+    margin-right: 32%;
+}
 
 @media screen and (max-width: 930px) {
-
 
     .Logo {
 
@@ -263,20 +260,20 @@ body{
         margin-right: 0%;
     }
 
-    .contenedor-titulo{
-    flex-direction: column;
-          text-align: center;
+    .contenedor-titulo {
+        flex-direction: column;
+        text-align: center;
     }
 
-    #contenedor_carousel{
+    #contenedor_carousel {
         width: auto;
     }
 
-    #carouselExampleControls{
+    #carouselExampleControls {
         width: auto;
     }
 }
-}
+
 
 /*-------COMIENZO DE PESTAÑA "QUIEN SOY"-----*/
 
@@ -285,14 +282,14 @@ body{
     color: #fff;
 }
 
-#parte_baja_textos{
+#parte_baja_textos {
     margin-bottom: 150px;
 }
 
 
 /*-------COMIENZO DE PESTAÑA "Servicios"-----*/
 
-.video-servicio{
+.video-servicio {
     position: fixed;
     min-width: 100%;
     min-height: 100%;
@@ -341,7 +338,7 @@ body{
     width: 50%;
 }
 
-.preguntas_trabajar{
+.preguntas_trabajar {
     color: #fff;
     font-size: 4rem;
     display: flex;
@@ -351,12 +348,12 @@ body{
     font-family: 'Bebas Neue', cursive;
 }
 
-#acordeon{
+#acordeon {
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
-.accordion-body{
+.accordion-body {
     background-image: radial-gradient(circle at 45.29% -3.89%, #905360 0, #87465a 16.67%, #7a3651 33.33%, #6a2246 50%, #590a3c 66.67%, #4b0036 83.33%, #3e0032 100%);
     color: #fff;
 }
@@ -396,31 +393,28 @@ body{
 /*------Comienzo de Pestaña Skills ------*/
 
 
-
 #Main__Skills {
-    
+
     color: whitesmoke;
     text-align: center;
     width: 100%;
-    height: 1500px;
+    height: 1600px;
 }
 
 .Titulo_Skills {
     font-family: 'Bebas Neue', cursive;
-    font-size: 70px;
+    font-size: 5rem;
     padding-bottom: 3%;
+    margin-top: 5rem;
 }
 
-#cards_skills div{
+#cards_skills div {
     margin: 30px;
 }
 
-.card{
+.card {
     background-image: radial-gradient(circle at 50% -20.71%, #ff9bff 0, #d785ff 25%, #9c6cd8 50%, #6652ab 75%, #393c83 100%);
 }
-
-
-
 
 @media screen and (max-width: 930px) {
 
@@ -429,21 +423,13 @@ body{
         width: 100%;
     }
 
-    #cards_skills{
-        width: auto;
-    }
-
 }
 
 @media screen and (max-width: 280px) {
 
     #Main__Skills {
         height: 3200px;
-    
-    }
 
-    #cards_skills{
-        width: auto;
     }
 
 }
@@ -456,25 +442,25 @@ body{
     color: whitesmoke;
 }
 
-#formulario{
+#formulario {
     width: auto;
     margin-bottom: 30px;
 }
 
-#formulario__color{
+#formulario__color {
     background-image: radial-gradient(circle at 59.61% 23.59%, #bebd35 0, #acba37 8.33%, #97b63b 16.67%, #82b03f 25%, #6ca842 33.33%, #569d45 41.67%, #3e9146 50%, #248547 58.33%, #007a47 66.67%, #007048 75%, #00684a 83.33%, #00614c 91.67%, #005c4e 100%);
     border-radius: 10px;
 }
 
-#formulario__color div{
+#formulario__color div {
     width: 95%;
 }
 
-#formulario__color select{
+#formulario__color select {
     width: 90%;
 }
 
-#formulario__color button{
+#formulario__color button {
     background-color: #ca5907;
     border-color: #fff;
     font-size: 1.2rem;
@@ -482,16 +468,16 @@ body{
 
 @media screen and (max-width: 930px) {
 
-    #formulario__color{
+    #formulario__color {
         width: 85%;
     }
 
-    #formulario__color div{
+    #formulario__color div {
         width: 85%;
     }
 
-    #formulario__color select{
+    #formulario__color select {
         width: 70%;
     }
-   
-   }
+
+}
