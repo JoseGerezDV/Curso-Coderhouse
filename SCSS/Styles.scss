@@ -1,0 +1,313 @@
+@import "aHeader";
+@import "footer";
+@import "particulas";
+@import "variables";
+
+
+body {
+    background-color: black;
+
+}
+
+/*----------COMINEZO INDEX----------*/
+
+.contenedor-titulo {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+    .titulo {
+        font-size: 50px;
+    }
+
+    .caracteristica-sitio {
+
+        font-weight: bold;
+        color: #c99806;
+        font-style: normal;
+
+    }
+
+}
+
+.Logo {
+    display: flex;
+    justify-content: right;
+
+}
+
+
+#contenedor_carousel {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.Boton_Index {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5%;
+    margin-right: 32%;
+}
+
+@media screen and (max-width: 930px) {
+
+    .Logo {
+
+        display: flex;
+        justify-content: center;
+        margin: 5%;
+
+    }
+
+    .Boton_Index {
+        color: #1cc49d;
+        display: flex;
+        justify-content: center;
+        margin-top: 13%;
+        margin-right: 0%;
+    }
+
+    .contenedor-titulo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #contenedor_carousel {
+        width: auto;
+    }
+
+    #carouselExampleControls {
+        width: auto;
+    }
+}
+
+/*-------COMIENZO DE PESTAÑA "QUIEN SOY"-----*/
+
+
+#Main__QuienSoy {
+    color: #fff;
+}
+
+#parte_baja_textos {
+    margin-bottom: 150px;
+}
+
+/*-------COMIENZO DE PESTAÑA "Servicios"-----*/
+
+.video-servicio {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+
+}
+
+#section_trabajar {
+
+    .Titulo__Trabajar {
+        color: whitesmoke;
+        font-family: 'Bebas Neue', cursive;
+        margin: 3%;
+        font-size: 4rem;
+        display: flex;
+        justify-content: left;
+
+    }
+
+    .Parrafo__Trabajar {
+        font-family: 'Heebo', sans-serif;
+        color: whitesmoke;
+        font-size: 1.3rem;
+        margin: 2%;
+        width: 45%;
+
+    }
+
+}
+
+.youtube_video {
+    width: 50%;
+
+    .Video {
+        height: 0px;
+        padding-bottom: 56.6%;
+        position: relative;
+        margin-bottom: 35px;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}
+
+.preguntas_trabajar {
+    color: #fff;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#acordeon {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .accordion-body {
+        background-image: $degradado_rojo;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 930px) {
+
+    #section_trabajar {
+
+        .Titulo__Trabajar {
+            color: whitesmoke;
+            font-family: 'Bebas Neue', cursive;
+            margin: 3%;
+            font-size: 400%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .Parrafo__Trabajar {
+            font-family: 'Heebo', sans-serif;
+            color: whitesmoke;
+            font-size: 120%;
+            margin: 2%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 90%;
+
+        }
+
+    }
+
+    .youtube_video {
+        width: 100%;
+    }
+
+    .preguntas_trabajar {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+/*------Comienzo de Pestaña Skills ------*/
+
+
+#Main__Skills {
+
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    height: 1600px;
+
+    .Titulo_Skills {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 5rem;
+        padding-bottom: 3%;
+        margin-top: 5rem;
+    }
+}
+
+#cards_skills {
+
+    .card {
+        background-image: $degradado_rojo;
+    }
+
+    div {
+        margin: 30px;
+    }
+
+}
+
+
+@media screen and (max-width: 930px) {
+
+    #Main__Skills {
+        height: 2900px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    #Main__Skills {
+        height: 3200px;
+
+    }
+
+}
+
+
+/*-----Comienzo Pestaña Contacto-----*/
+
+.Body-Contacto {
+    background-color: rgb(17, 17, 17);
+    color: whitesmoke;
+}
+
+#formulario {
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+
+#formulario__color {
+    background-image: $degradado_verde;
+    border-radius: 10px;
+    padding: 20px;
+
+    div {
+        width: 95%;
+
+        select {
+            width: 90%;
+
+        }
+    }
+
+    button {
+        background-color: #ca5907;
+        border-color: #fff;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+
+    #formulario__color {
+        width: 85%;
+    }
+
+    #formulario__color div {
+        width: 85%;
+    }
+
+    #formulario__color select {
+        width: 70%;
+    }
+
+}
