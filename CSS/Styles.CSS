@@ -9,14 +9,6 @@
   background: none;
 }
 
-.menu .btn_menu {
-  margin-right: 30px;
-  font-size: 30px;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -26,19 +18,11 @@ ul {
   z-index: 2;
 }
 
-ul .Active {
-  background-color: #04AA6D;
-}
-
-ul ul.show {
-  top: 65px;
-}
-
 ul li {
   float: left;
 }
 
-ul a {
+ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -46,10 +30,26 @@ ul a {
   text-decoration: none;
 }
 
-ul a:hover {
+ul li a:hover {
   background-color: #111;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+
+.Active {
+  background-color: #04AA6D;
+}
+
+.btn_menu {
+  margin-right: 30px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+ul.show {
+  top: 65px;
 }
 
 @media screen and (max-width: 930px) {
@@ -57,7 +57,13 @@ ul a:hover {
     height: 65px;
     background-color: #0a1a2a;
   }
-  .menu .menu_items {
+  .menu .btn_menu {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 17px 0 0 10px;
+  }
+  .menu_items {
     position: fixed;
     width: 100vw;
     height: calc(100% - 65px);
@@ -74,26 +80,17 @@ ul a:hover {
             flex-direction: column;
     background-color: #0a1a2a;
   }
-  .menu .menu_items li {
+  .menu_items li {
     margin: 30px 0 0 0;
     line-height: 30px;
   }
-  .menu .menu_items li:hover {
-    background: none;
-  }
-  .menu .menu_items li a {
+  .menu_items a {
     font-size: 20px;
     color: #fff;
     font-weight: bold;
   }
-  .menu .menu_items li a:hover {
+  .menu_items a:hover {
     color: #111;
-  }
-  .menu .btn_menu {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: 17px 0 0 10px;
   }
 }
 
