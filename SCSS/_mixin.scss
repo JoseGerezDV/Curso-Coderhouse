@@ -1,0 +1,10 @@
+@mixin imagenesquiensoy ($borde) {
+    width: 70%;
+    border-style:solid;
+    border-color: $borde;
+}
+
+@mixin invertinsentido {
+    display: flex;
+    flex-flow:row-reverse;    
+}

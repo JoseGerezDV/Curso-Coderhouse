@@ -2,6 +2,7 @@
 @import "footer";
 @import "particulas";
 @import "variables";
+@import "mixin";
 
 
 body {
@@ -83,14 +84,54 @@ body {
 
 /*-------COMIENZO DE PESTAÑA "QUIEN SOY"-----*/
 
+#acercademi {
+    background-color: rgb(121, 121, 121);
+}
 
 #Main__QuienSoy {
     color: #fff;
 }
 
+#textos_quiensoy {
+    div {
+        margin-top: 2.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
 #parte_baja_textos {
     margin-bottom: 150px;
 }
+
+.imgquiensoy1 {
+
+    img {
+        @include imagenesquiensoy (rgb(255, 255, 255));
+    }
+}
+
+.imgquiensoy2 {
+
+    img {
+        @include imagenesquiensoy (black);
+    }
+
+}
+
+@media screen and (min-width: 930px) {
+
+    #grupo1img {
+        @include invertinsentido
+      }
+
+    #grupo2img {
+        @include invertinsentido
+    }
+      
+
+}
+
+
 
 /*-------COMIENZO DE PESTAÑA "Servicios"-----*/
 
