@@ -346,17 +346,28 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #section_trabajar .Parrafo__Trabajar {
   font-family: 'Heebo', sans-serif;
   color: whitesmoke;
   font-size: 1.3rem;
-  margin: 2%;
-  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
+}
+
+#section_trabajar .Parrafo__Trabajar p {
+  width: 50%;
+  text-align: center;
 }
 
 .youtube_video {
@@ -418,16 +429,15 @@ body {
   #section_trabajar .Parrafo__Trabajar {
     font-family: 'Heebo', sans-serif;
     color: whitesmoke;
-    font-size: 120%;
-    margin: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
+  }
+  #section_trabajar .Parrafo__Trabajar p {
     width: 90%;
   }
   .youtube_video {
@@ -520,10 +530,10 @@ body {
 
 @media screen and (max-width: 930px) {
   #formulario__color {
-    width: 85%;
+    width: with(85%);
   }
   #formulario__color div {
-    width: 85%;
+    width: with(85%);
   }
   #formulario__color select {
     width: 70%;

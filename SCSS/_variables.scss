@@ -15,6 +15,8 @@ $degradado_rojo: radial-gradient(circle at 45.29% -3.89%, #905360 0, #87465a 16.
 
 $degradado_verde: radial-gradient(circle at 59.61% 23.59%, #bebd35 0, #acba37 8.33%, #97b63b 16.67%, #82b03f 25%, #6ca842 33.33%, #569d45 41.67%, #3e9146 50%, #248547 58.33%, #007a47 66.67%, #007048 75%, #00684a 83.33%, #00614c 91.67%, #005c4e 100%);
 
+$tamanoform: with(85%);
+
 /*Los siguientes Mixin se aplican en pestaña quien soy/acerca de mí*/
 
 @mixin imagenesquiensoy ($borde) {
