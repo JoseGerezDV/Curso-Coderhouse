@@ -36,6 +36,12 @@ body {
 
 }
 
+.titulocarrousel{
+    color: #fff;
+    text-align: center;
+    margin-top: 10rem;
+}
+
 
 #contenedor_carousel {
     margin-top: 150px;
@@ -177,26 +183,7 @@ body {
 
 }
 
-.youtube_video {
-    width: 50%;
 
-    .Video {
-        height: 0px;
-        padding-bottom: 56.6%;
-        position: relative;
-        margin-bottom: 35px;
-
-
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-        }
-    }
-
-}
 
 .preguntas_trabajar {
     color: #fff;
@@ -250,14 +237,22 @@ body {
 
     }
 
-    .youtube_video {
-        width: 100%;
-    }
-
     .preguntas_trabajar {
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    #video-frontend {
+        div {
+            iframe {
+                width: 70%;
+            }
+        }
     }
 
 }
