@@ -273,6 +273,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+    margin: 1rem;
+  }
+  .contenedor-titulo h1 {
+    font-size: 1.5rem !important;
   }
   #contenedor_carousel {
     width: auto;
@@ -374,7 +378,7 @@ body {
 
 #section_trabajar .Parrafo__Trabajar p {
   width: 50%;
-  text-align: center;
+  text-align: justify;
 }
 
 .preguntas_trabajar {

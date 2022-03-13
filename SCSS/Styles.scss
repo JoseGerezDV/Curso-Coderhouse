@@ -78,6 +78,11 @@ body {
     .contenedor-titulo {
         flex-direction: column;
         text-align: center;
+        margin: 1rem;
+
+        h1{
+            font-size: 1.5rem !important;
+        }
     }
 
     #contenedor_carousel {
@@ -178,7 +183,7 @@ body {
 
         p {
             width: 50%;
-            text-align: center;
+            text-align: justify;
 
         }
     }
