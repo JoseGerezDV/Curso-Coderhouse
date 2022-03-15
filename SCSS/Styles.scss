@@ -67,6 +67,10 @@ body {
 
     }
 
+    .titulocarrousel{
+        font-size: 1.5rem;
+    }
+
     .Boton_Index {
         color: #1cc49d;
         display: flex;
@@ -328,7 +332,7 @@ body {
 
 
 #formulario__color {
-    background-image: $degradado_verde;
+    background-image: radial-gradient(circle at 50% 6.62%, #b25e16 0, #ae4e11 16.67%, #a63a08 33.33%, #991c00 50%, #8c0000 66.67%, #820000 83.33%, #7b0000 100%);
     border-radius: 10px;
     padding: 20px;
 
@@ -345,6 +349,7 @@ body {
         background-color: #ca5907;
         border-color: #fff;
         font-size: 1.2rem;
+        height: 5rem;
     }
 
 }
