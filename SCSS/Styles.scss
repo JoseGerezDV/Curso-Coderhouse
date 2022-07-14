@@ -129,7 +129,7 @@ body {
 .imgquiensoy2 {
 
     img {
-        @include imagenesquiensoy (black);
+        @include imagenesquiensoy (rgb(255, 255, 255));
     }
 
 }
@@ -186,8 +186,8 @@ body {
         margin-bottom: 5rem;
 
         p {
-            width: 50%;
-            text-align: justify;
+            width: 75%;
+            text-align: center;
 
         }
     }
@@ -201,8 +201,8 @@ body {
     font-size: 4rem;
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
-    margin-bottom: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -276,7 +276,7 @@ body {
     color: whitesmoke;
     text-align: center;
     width: 100%;
-    height: 1600px;
+    height: auto;
 
     .Titulo_Skills {
         font-family: 'Bebas Neue', cursive;
@@ -284,16 +284,35 @@ body {
         padding-bottom: 3%;
         margin-top: 5rem;
     }
+
+    #proyectos{
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
 }
+
 
 #cards_skills {
 
     .card {
         background-image: $degradado_rojo;
+        border-radius: 2rem;
     }
 
-    div {
-        margin: 30px;
+    div{
+        margin-top: 3rem;
+        margin: 1rem;
+    }
+
+    .card-body{
+        margin: 0;
+    }
+
+    a{
+        display: flex;
+        justify-content:space-around;
+        background: none;
+        border-radius: 2cm;
     }
 
 }
@@ -301,10 +320,15 @@ body {
 
 @media screen and (max-width: 930px) {
 
-    #Main__Skills {
-        height: 2900px;
-        width: 100%;
+    #cards_skills {
+
+        div{
+            margin-top: none;
+            margin: none;
+        }
+
     }
+
 
 }
 
@@ -327,17 +351,34 @@ body {
 
 #formulario {
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 8rem;
+}
+
+.red-social2 a{
+        display: inline-block;
+        text-decoration: none;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        border-radius: 70%;
+        color: #fff;
+        background-color: #ca5907;
+        text-align: center;
+        transition: all 300ms ease;
+
+        &:hover {
+            color: black;
+        }
 }
 
 
 #formulario__color {
-    background-image: radial-gradient(circle at 50% 6.62%, #b25e16 0, #ae4e11 16.67%, #a63a08 33.33%, #991c00 50%, #8c0000 66.67%, #820000 83.33%, #7b0000 100%);
+    background-color: black;
     border-radius: 10px;
     padding: 20px;
 
     div {
-        width: 95%;
+        
 
         select {
             width: 90%;

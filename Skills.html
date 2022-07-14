@@ -11,7 +11,8 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/Styles.CSS" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <meta name="description" content="Portfolio Jose Gerez frontend - Como desarrollador Web poseo varias habilidades que me permiten crear citios webs desde cero. Ingresa para descubrir cuales son.">
+    <meta name="description"
+        content="Portfolio Jose Gerez frontend - Como desarrollador Web poseo varias habilidades que me permiten crear citios webs desde cero. Ingresa para descubrir cuales son.">
     <meta name="keywords" content="habilidades, Jose Gerez, programación, html, css, javascript, reactjs">
 
 </head>
@@ -28,9 +29,9 @@
         <nav class="menu">
             <ul class="menu_items">
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./quiensoy.html" >Acerca de mí</a></li>
-                <li><a href="./servicios.html" >Servicios</a></li>
-                <li><a href="./Skills.html" class=Active >Skills</a></li>
+                <li><a href="./quiensoy.html">Acerca de mí</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./Skills.html" class=Active>Mis trabajos</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
             <span class="btn_menu">
@@ -42,58 +43,33 @@
 
     <main id="Main__Skills">
 
-        <span>
-        <h1 class="Titulo_Skills">Skills</h1>
-        </span>
+        <section id="proyectos" class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="card col-10 col-sm-5 m-3">
+                    <img src="./Imagenes/Electrohome.jpg" class="card-img-top" alt="proyecto tienda ElectroHome">
 
-        <section id="cards_skills" class="container">
-
-            <div class="row d-flex justify-content-around">
-
-                <div class="card col-auto" style="width: 18rem;">
-                    <img src="./Imagenes/HTML.png" class="card-img-top" alt="tarjeta con imagen html">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML</h5>
-                        <p class="card-text">Es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.</p>
-                        <a href="https://www.youtube.com/watch?v=10GHKjgQIR0" target="blank" class="btn btn-primary">Mas Información</a>
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">ElectroHome</h5>
+                        <p class="card-text">E-commerse realizado en su totalidad con HTML-CSS y Javascript puro. Simula
+                            la navegación, selección de productos, carga de carrito y compra.</p>
+                        <a href="https://628f838f622aaa7550117e0b--glistening-croquembouche-98afd2.netlify.app/" target="blank"
+                            class="btn btn-primary">Ir al proyecto</a>
                     </div>
                 </div>
 
-                <div class="card col-auto" style="width: 18rem;">
-                    <img src="./Imagenes/Css.png" class="card-img-top" alt="tarjeta con imagen css">
-                    <div class="card-body">
-                        <h5 class="card-title">CSS</h5>
-                        <p class="card-text">Lenguaje que determina el estilo y la estética de los documentos HTML.</p>
-                        <a href="https://www.youtube.com/watch?v=8cSo0ijtkzU" target="blank" class="btn btn-primary">Mas información</a>
-                    </div>
-                </div>
+                <div class="card col-10 col-sm-5 m-3">
+                    <img src="./Imagenes/PRÓXIMAMENTE.jpg" class="card-img-top" alt="...">
 
-            </div>
-
-            <div class="row d-flex justify-content-around">
-
-                <div class="card col-auto" style="width: 18rem;">
-                    <img src="./Imagenes/JAVA.png" class="card-img-top" alt="tarjeta con imagen java">
-                    <div class="card-body">
-                        <h5 class="card-title">JavaScript</h5>
-                        <p class="card-text">Lenguaje de programación utilizado para añadir características interactivas a un sitio web.</p>
-                        <a href="https://www.youtube.com/watch?v=riZbwRFMFuw" target="blank" class="btn btn-primary">Más información</a>
-                    </div>
-                </div>
-
-                <div class="card col-auto" style="width: 18rem;">
-                    <img src="./Imagenes/react.png" class="card-img-top" alt="tarjeta con imagen react">
-                    <div class="card-body">
-                        <h5 class="card-title">React JS</h5>
-                        <p class="card-text">Biblioteca escrita en JavaScript, desarrollada en Facebook para facilitar la creación de componentes interactivos, para interfaces de usuarios.</p>
-                        <a href="https://www.youtube.com/watch?v=1-2eyS0k-IA" target="blank" class="btn btn-primary">Más información</a>
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Página en WordPress</h5>
+                        <p class="card-text">Actualmente me mantengo trabajando en este proyecto, en cuanto esté terminado colocaré aquí el enlace para su visualización.</p>
+                        <a href="#" id="btnProximamente" class="btn btn-primary">PRÓXIMAMENTE</a>
                     </div>
                 </div>
 
             </div>
 
         </section>
-
 
     </main>
 
@@ -114,10 +90,9 @@
             <div class="box">
                 <h2>SÍGUEME</h2>
                 <div class="red-social">
-                    <a href="https://www.facebook.com/" target="blank" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/" target="blank" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/" target="blank" class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/" target="blank" class="fa fa-youtube"></a>
+                    <a href="https://www.linkedin.com/in/jos%C3%A9-luis-gerez-271b18214/" target="blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.facebook.com/joselcuervo/" target="blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/jose_gerez92/" target="blank" class="fa fa-instagram"></a>
                 </div>
             </div>
         </div>
@@ -127,7 +102,7 @@
 
     </footer>
 
-    
+
 
     <!--Menu desplegable-->
     <script src="./JS/apps.js" defer></script>
@@ -142,7 +117,7 @@
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </script>
 
 
 

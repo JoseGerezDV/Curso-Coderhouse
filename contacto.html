@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./CSS/Styles.CSS" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <meta name="description" content="Portfolio Jose Gerez frontend - Contactame vía web, facebook, Instragram y más.">
-    <meta name="keywords" content="Contacto, Jose Gerez, programación, trabajos, facebook, instagram, mail, telefono, atención">
+    <meta name="keywords"
+        content="Contacto, Jose Gerez, programación, trabajos, facebook, instagram, mail, telefono, atención">
 </head>
 
 <body class="Body-Contacto">
@@ -27,10 +28,10 @@
         <nav class="menu">
             <ul class="menu_items">
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./quiensoy.html" >Acerca de mí</a></li>
-                <li><a href="./servicios.html" >Servicios</a></li>
-                <li><a href="./Skills.html" >Skills</a></li>
-                <li><a href="./contacto.html"  class=Active >Contacto</a></li>
+                <li><a href="./quiensoy.html">Acerca de mí</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./Skills.html">Mis trabajos</a></li>
+                <li><a href="./contacto.html" class=Active>Contacto</a></li>
             </ul>
             <span class="btn_menu">
                 <i class="fas fa-bars"></i>
@@ -45,46 +46,55 @@
             <h1>Contacto</h1>
         </section>
 
-        <section id="formulario" class="container">
-            <div class="row d-flex justify-content-center">
-                <div id="formulario__color" class="col-7">
-                    <div class="mb-3 d-grid gap-2 mx-auto">
-                        <label for="nombre-txt" class="form-label">Nombre</label>
-                        <input type="text" placeholder="Ingrese Nombre" class="form-control" id="nombre-txt">
-                    </div>
-                    <div class="mb-5 d-grid gap-2 mx-auto">
-                        <label for="apellido-txt" class="form-label">Apellido</label>
-                        <input type="text" placeholder="Ingrese Apellido" class="form-control" id="apellido-txt">
-                    </div>
-                    <div id="emailcontacto" class="input-group mb-4 mx-auto">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                    <div class="mb-5 mx-auto">
-                        <label for="apellido-txt" class="form-label">Celular</label>
-                        <input type="number" placeholder="Número de Celular" class="form-control" id="apellido-txt">
-                    </div>
-                    <select class="form-select form-select-lg mb-5 mx-auto" aria-label=".form-select-lg example">
-                        <option selected>Seleccione una Opción</option>
-                        <option value="1">Particular</option>
-                        <option value="2">Empresa</option>
-                    </select>
-                    <div class="mb-4 d-grid gap-2 mx-auto">
-                        <label for="exampleFormControlTextarea1" class="form-label">Detalles del proyecto</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
 
-                    <div class="d-grid gap-2 col-6 mx-auto ">
-                        <button class="btn btn-primary" type="button">Enviar</button>
-                    </div>
+        <form action="https://formspree.io/f/mlezyknw"  method="POST">
 
+
+            <section id="formulario" class="container">
+                <div class="row d-flex justify-content-center">
+                    <div id="formulario__color" class="col-7">
+                        <div class="mb-3 d-grid gap-2 mx-auto">
+                            <label for="nombre-txt" class="form-label">Nombre</label>
+                            <input type="text" placeholder="Ingrese Nombre" class="form-control" id="nombre-txt" name="name">
+                        </div>
+                        <div class="mb-5 d-grid gap-2 mx-auto">
+                            <label for="apellido-txt" class="form-label">Apellido</label>
+                            <input type="text" placeholder="Ingrese Apellido" class="form-control" id="apellido-txt" name="lastName">
+                        </div>
+                        <div id="emailcontacto" class="input-group mb-4 mx-auto">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="E-mail" aria-label="Username"
+                                aria-describedby="basic-addon1" name="email">
+                        </div>
+                        <div class="mb-5 mx-auto">
+                            <label for="apellido-txt" class="form-label">Celular</label>
+                            <input type="number" placeholder="Número de Celular" class="form-control" id="apellido-txt" name="phone">
+                        </div>
+                        <div class="mb-4 d-grid gap-2 mx-auto">
+                            <label for="exampleFormControlTextarea1" class="form-label">Detalles del proyecto</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+                        </div>
+
+                        <div class="d-grid gap-2 col-6 mx-auto ">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+
+                        <div class="box mt-5 mb-5">
+                            <h2 class="text-center">Contacto por Redes</h2>
+                            <div class="red-social2 mt-5 d-flex justify-content-around">
+                                <a href="https://www.linkedin.com/in/jos%C3%A9-luis-gerez-271b18214/" target="blank" class="fa fa-linkedin"></a>
+                                <a href="https://www.facebook.com/joselcuervo/" target="blank" class="fa fa-facebook"></a>
+                                <a href="https://www.instagram.com/jose_gerez92/" target="blank" class="fa fa-instagram"></a>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
+            </section>
 
-            </div>
 
-        </section>
-
+        </form>
 
     </main>
 
@@ -106,10 +116,9 @@
             <div class="box">
                 <h2>SÍGUEME</h2>
                 <div class="red-social">
-                    <a href="https://www.facebook.com/" target="blank" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/" target="blank" class="fa fa-instagram"></a>
-                    <a href="https://twitter.com/" target="blank" class="fa fa-twitter"></a>
-                    <a href="https://www.youtube.com/" target="blank" class="fa fa-youtube"></a>
+                    <a href="https://www.linkedin.com/in/jos%C3%A9-luis-gerez-271b18214/" target="blank" class="fa fa-linkedin"></a>
+                    <a href="https://www.facebook.com/joselcuervo/" target="blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/jose_gerez92/" target="blank" class="fa fa-instagram"></a>
                 </div>
             </div>
         </div>
@@ -119,7 +128,7 @@
 
     </footer>
 
-    
+
 
     <!--Logos-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
@@ -134,7 +143,7 @@
     <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </script>
 
 
 </body>
