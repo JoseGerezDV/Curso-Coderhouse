@@ -9,7 +9,7 @@ addEventListener('DOMContentLoaded', () => {
 
 } );
 
-addEventListener('DOMContentLoaded', () => {
+/*addEventListener('DOMContentLoaded', () => {
   const btn_prox = document.querySelector('#btnProximamente')
   if (btn_prox) {
       btn_prox.addEventListener('click', () => {
@@ -17,7 +17,7 @@ addEventListener('DOMContentLoaded', () => {
       })
   }
 
-} );
+} );*/
 
 particlesJS(
   {
